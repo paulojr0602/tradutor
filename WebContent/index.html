@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Tradutor de palavras</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	</head>
+	<body>
+		<h3>Selecione o modo de tradução</h3>
+		<form action="tradutorController">
+			<div class="container-md">
+				<div>			
+					<select name="modo" class="form-select" aria-label="Default select example">
+						<option value="PortuguesIngles"> Português -> Inglês</option>
+						<option value="InglesPortugues"> Inglês -> Poortugês</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<input class="form-control" type="text" name="palavra" placeholder="palavra" aria-label="Palavra:">
+					
+				</div>
+				<br>
+				<div>
+					<input type="submit" value="Traduzir"/>
+				</div>
+			</div>
+		</form>
+</body>
+</html>
